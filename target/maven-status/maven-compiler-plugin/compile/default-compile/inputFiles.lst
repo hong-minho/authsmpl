@@ -1,0 +1,7 @@
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\AuthsmplApplication.java
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\config\AdfsProperties.java
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\config\SecurityConfig.java
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\controller\TestController.java
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\filter\JwtAuthenticationFilter.java
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\service\JwksService.java
+C:\dev\authsmpl\src\main\java\com\example\authsmpl\service\JwtValidationService.java
