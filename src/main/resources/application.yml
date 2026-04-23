@@ -2,10 +2,10 @@ server:
   port: 8080
 
 adfs:
-  issuer: https://adfs-server.net/adfs
-  jwks-uri: https://adfs-server.net/adfs/discovery/keys
+  issuer: https://stsds.secsso.net/adfs
+  jwks-uri: https://stsds.secsso.net/adfs/discovery/keys
   # 앱 등록 시 ADFS에서 발급받은 Client ID (Relying Party Identifier)
-  audience: your-client-id-here
+  audience: visit-client
   # JWKS 캐시 갱신 최소 간격 (초) - 동일 kid 없을 때 재조회 쿨다운
   jwks-refresh-cooldown-seconds: 300
 

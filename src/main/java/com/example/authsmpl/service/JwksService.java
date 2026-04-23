@@ -55,6 +55,20 @@ public class JwksService {
     }
 
     /**
+     * 캐시된 공개키 전체를 반환한다.
+     * kid가 없는 토큰 검증 시 순회용으로 사용한다.
+     *
+     * @return 캐시에 있는 PublicKey 컬렉션 (비어 있을 수 있음)
+     */
+    public java.util.Collection<PublicKey> getAllPublicKeys() {
+        if (keyCache.isEmpty()) {
+            log.info("Key cache is empty, loading JWKS from {}", props.getJwksUri());
+            refreshKeys();
+        }
+        return keyCache.values();
+    }
+
+    /**
      * kid에 해당하는 공개키를 반환한다.
      *
      * @param kid JWT 헤더의 kid 값
